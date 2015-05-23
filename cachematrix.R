@@ -1,4 +1,4 @@
-## These funtions provide the means to avoid repeated computation
+## The functions below provide the means to avoid repeated computation
 ## of the inverse of a square matrix, if the matrix did not
 ## change.
 ## Limitation: The functions do not check if the given matrix is
@@ -47,7 +47,7 @@ cacheSolve <- function(x, ...) {
                 return(s)
         }
         # else get the matrix from 'x', compute the inverse,
-        # store the result in the cache of 'x' and return
+        # store the result in the cache variable of 'x' and return
         # the inverse
         data <- x$get()
         s <- solve(data, ...)
